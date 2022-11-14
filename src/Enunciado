@@ -1,0 +1,7 @@
+1 - Criar uma aplicação Hotel para cachorros
+2 - Criar uma interface Cachorro.
+        2.1 - Deve possuir o atributo NOME
+        2.2 - Deve ter no mínimo o método latir
+3 - Criar classes que sejam raças de cachorro.
+4 - Criar objetos dessas classes e incluí-los no Hotel;
+5 - Imprimir a lista de cachorros ordenada pelo NOME;
