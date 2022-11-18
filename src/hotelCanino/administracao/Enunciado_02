@@ -1,0 +1,10 @@
+Hotel Canino
+    1 - Criar a secretaria, onde o cliente poderá:
+        1.1 - pedir para fazer reserva;
+        1.2 - pedir banho ou tosa;
+        1.3 - Pedir para fazer o checkout;
+        1.4 - Agendar visita do cachorro;
+
+
+Objetivo - Modelar as classes/interfaces pensando
+no Single Responsibility Principle.
