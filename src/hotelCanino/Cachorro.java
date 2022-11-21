@@ -1,6 +1,8 @@
 package hotelCanino;
 
-public interface Cachorro extends Comparable<Cachorro> {
+import hotelCanino.administracao.Hospede;
+
+public abstract class Cachorro extends Hospede implements Comparable<Cachorro> {
     public abstract String latir();
     public abstract String getNome();
 }

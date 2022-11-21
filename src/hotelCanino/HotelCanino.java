@@ -1,29 +1,28 @@
 package hotelCanino;
 
-import hotelCanino.administracao.Financeiro;
-import hotelCanino.administracao.RegistroContabil;
-import hotelCanino.administracao.Secretaria;
+import hotelCanino.administracao.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class HotelCanino {
-    private static List<Cachorro> hospedes = new ArrayList<>();
+    private static Booking<Cachorro> hospedesCaninos = new Booking<>();
+    private static Booking<Gato> hospedesFelinos = new Booking<>();
+    private static Booking<Passaro> hospedesQueVoam = new Booking<>();
 
     public static void main(String[] args){
 
-        hospedes.add(new Chiuaua("totó"));
-        hospedes.add(new Chiuaua("bebê"));
-        hospedes.add(new PastorAlemao("Bob"));
-        hospedes.add(new PastorAlemao("Pitu"));
-        hospedes.add(new PitBull("Caramelo"));
+        hospedesCaninos.addHospede(new Chiuaua("totó"));
+        hospedesCaninos.addHospede(new Chiuaua("bebê"));
+        hospedesCaninos.addHospede(new PastorAlemao("Bob"));
+        hospedesCaninos.addHospede(new PastorAlemao("Pitu"));
+        hospedesCaninos.addHospede(new PitBull("Caramelo"));
 
-        Collections.sort(hospedes);
+        hospedesFelinos.addHospede(new Gato());
 
-        hospedes.forEach(c -> c.latir());
-
-        hospedes.forEach(c -> sair(c));
+        hospedesCaninos.getHospedes().forEach(c -> c.latir());
+        hospedesCaninos.getHospedes().forEach(c -> sair(c));
 
         Financeiro.getRelatorioFinanceiro(RegistroContabil.livroContabil);
     }

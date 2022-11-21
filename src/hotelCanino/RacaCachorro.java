@@ -1,6 +1,6 @@
 package hotelCanino;
 
-public class RacaCachorro implements Cachorro {
+public class RacaCachorro extends Cachorro {
     private String latido;
     private String nome;
 

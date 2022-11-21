@@ -1,6 +1,6 @@
 package hotelCanino;
 
-public class PitBull implements Cachorro, Comparable<Cachorro> {
+public class PitBull extends Cachorro implements Comparable<Cachorro> {
     private String nome;
 
     public PitBull(String nome){
